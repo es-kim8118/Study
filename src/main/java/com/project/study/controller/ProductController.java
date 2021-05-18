@@ -17,6 +17,7 @@ public class ProductController {
 
     @RequestMapping("/product")
     public List<Product> getProduct(){
+        
         return productRepository.findAll();
     }
 
